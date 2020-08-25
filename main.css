@@ -1,0 +1,50 @@
+.square {
+    width: 80px;
+    height: 80px;
+    font-size: 60px;
+    font-family: Helvetica;
+}
+
+.gameBoard {
+    display: none;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+body {
+    background-color: beige!important;
+}
+
+.module-border-wrap {
+    position: relative;
+    background: radial-gradient(rgb(243, 180, 22), rgb(100, 80, 28), rgba(255, 0, 0, 0.1));
+    padding: 1px;
+}
+
+.board {
+    border-collapse: collapse;
+}
+
+.vert {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.hori {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.square h2 {
+    margin: 0px
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tic Tac Toe</title>
+    <!-- Import CSS -->
+    <link rel="stylesheet" type="text/css" href="/ressources/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="container h-25">
+        <div class="row card-body">
+            <div class="col-sm-11">
+                <div class="module-border-wrap"></div>
+                <div class="text-center">
+                    <h1>Tic Tac Toe Server implementation</h1>
+                    <h3>QA and Developer position</h3>
+                </div>
+                <ol>
+                    <li>Player 1 : Create a new game by entering the username</li>
+                    <li>Player 2 : Enter another username and the room id that is displayed on first window.</li>
+                    <li>Click on join game. </li>
+                </ol>
+                <div class="module-border-wrap"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto" style="width: 300px;">
+        <div class="menu">
+            <div class="form-group">
+                <div class="col s10">
+                    <h4>Create a new Game</h4>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="">Name :</span>
+                        </div>
+                        <input type="text" class="form-control" name="name" id="nameNew" placeholder="Enter your name" required>
+                    </div>
+                </div>
+                <br>
+                <div class="col s2">
+                    <button class="btn btn-primary" id="new">Create room</button>
+                </div>
+                <br><br>
+                <div class="form-group">
+                    <div class="col s10">
+                        <h4>Join an existing game</h4>
+
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="">Name :</span>
+                            </div>
+                            <input type="text" class="form-control" name="name" id="nameJoin" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="">Game ID :</span>
+                            </div>
+                            <input type="text" class="form-control" name="room" id="room" placeholder="Enter Game ID" required>
+                        </div>
+
+                    </div>
+                    <br>
+                    <div class="col s2">
+                        <button class="btn btn-success" id="join">Join Game</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="gameBoard" style="display: none;">
+            <h2 id="userHello"></h2>
+            <h4 id="turn"></h4>
+            <p id="alert"></p>
+            <table class="board">
+                <tr>
+                    <td class="square" id="button_00">
+                        <h2></h2>
+                    </td>
+                    <td class="square vert" id="button_01">
+                        <h2></h2>
+                    </td>
+                    <td class="square" id="button_02">
+                        <h2></h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="square hori" id="button_10">
+                        <h2></h2>
+                    </td>
+                    <td class="square vert hori" id="button_11">
+                        <h2></h2>
+                    </td>
+                    <td class="square hori" id="button_12">
+                        <h2></h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="square" id="button_20">
+                        <h2></h2>
+                    </td>
+                    <td class="square vert" id="button_21">
+                        <h2></h2>
+                    </td>
+                    <td class="square" id="button_22">
+                        <h2></h2>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="main.js"></script>
+</body>
+
+</html>
